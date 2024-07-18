@@ -1,5 +1,5 @@
 const express=require('express');
-const authRouter=express.authRouter();
+const authRouter=express.Router();
 const multer=require('multer');
 const path=require('path');
 const AuthJwt=require('../Middle-ware/isAuth');
