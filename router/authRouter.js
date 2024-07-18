@@ -2,7 +2,7 @@ const express=require('express');
 const authRouter=express.Router();
 const multer=require('multer');
 const path=require('path');
-const AuthJwt=require('../Middle-ware/isAuth');
+const AuthJwt=require('../middleware/isAuth');
 const {postAuthReg,postAuthLog,viewProfile} = require('../controller/authController');
 
 const fileStorage=multer.diskStorage({
